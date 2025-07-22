@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Lab 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+<div class="container-fluid my-3">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3 rounded">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo-energy-pilates.png" alt="Logo" width="150" height="36" class="me-2 rounded">
+                Energy Pilates
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door"></i> Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-info-circle"></i> Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-collection"></i> Khóa học
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Yoga cơ bản</a></li>
+                            <li><a class="dropdown-item" href="#">Pilates nâng cao</a></li>
+                            <li><a class="dropdown-item" href="#">Cardio giảm cân</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bài 3 & 4: Sidebar + Blog -->
+    <div class="row gx-4 gy-4">
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+            <div class="card mb-3">
+                <img src="images/avatar.png" class="avatar mt-4" alt="Avatar">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-2">Về tôi</h5>
+                    <div class="text-start" style="font-size:15px;">
+                        <b>Giới thiệu bản thân</b><br>
+                        TS. Trần Hoàng, Tổ chức Tư vấn sức khỏe quốc tế<br>
+                        <span style="font-size:13px;">Châm ngôn: Ta không được chọn nơi mình sinh ra, nhưng ta được chọn cách mình sẽ sống</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Chuyên mục -->
+            <div class="card p-3 category-list">
+                <h6 class="mb-3">Chuyên mục</h6>
+                <ul class="list-unstyled mb-1">
+                    <li>Chế độ tập <span class="badge bg-primary rounded-pill">13</span></li>
+                    <li>Chế độ dinh dưỡng <span class="badge bg-primary rounded-pill">9</span></li>
+                    <li>Cẩm nang cuộc sống <span class="badge bg-primary rounded-pill">21</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Blog content -->
+        <div class="col-lg-8">
+            <h4 class="mb-4 mt-2 text-primary">Blog của tôi</h4>
+            <div class="row g-3">
+                <!-- Bài viết lớn bên trái -->
+                <div class="col-md-8">
+                    <div class="card h-100">
+                        <img src="images/tap-pilates1.jpg" class="card-img-top" alt="Phương pháp tập Pilates">
+                        <div class="card-body">
+                            <div class="post-title">Phương pháp tập Pilates giúp phục hồi chấn thương cột sống 
+                                <span class="post-meta ms-2"><i class="bi bi-chat-left-dots"></i> 16</span>
+                            </div>
+                            <p class="mt-2 mb-3" style="font-size: 15px;">Ngoài việc giúp duy trì vóc dáng, cải thiện sự linh hoạt, điều hòa cho người tập, Pilates giúp cơ bắp và các khớp mọc dẻo hơn, kéo giãn hơn...</p>
+                            <a href="#" class="btn btn-info btn-sm text-white">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Danh sách blog nhỏ bên phải -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body p-2">
+                            <div class="d-flex mb-3">
+                                <img src="images/eat-clean.png" alt="" class="blog-list-img">
+                                <div class="ms-2">
+                                    <div class="post-title mb-0" style="font-size: 0.97rem;">Biết ơn đời, đời sẽ thương ta</div>
+                                    <div class="post-meta"><i class="bi bi-chat-left-dots"></i> 30</div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="images/orange_300x300.jpg" alt="" class="blog-list-img">
+                                <div class="ms-2">
+                                    <div class="post-title mb-0" style="font-size: 0.97rem;">9 tác dụng tuyệt vời của quả cam</div>
+                                    <div class="post-meta"><i class="bi bi-chat-left-dots"></i> 18</div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="images/sesameoil_300x300.jpg" alt="" class="blog-list-img">
+                                <div class="ms-2">
+                                    <div class="post-title mb-0" style="font-size: 0.97rem;">10 công dụng bất ngờ từ dầu vừng</div>
+                                    <div class="post-meta"><i class="bi bi-chat-left-dots"></i> 21</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img src="images/spinach_300x300.jpg" alt="" class="blog-list-img">
+                                <div class="ms-2">
+                                    <div class="post-title mb-0" style="font-size: 0.97rem;">Lợi ích khi ăn rau mỗi ngày</div>
+                                    <div class="post-meta"><i class="bi bi-chat-left-dots"></i> 12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- row end -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div>©Copyright by FPT Polytechnic</div>
+    </footer>
+</div>
+</body>
+</html>

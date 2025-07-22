@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        .custom-navbar {
+        background-color: #eaf6f6;
+        }
+
+        .navbar-nav .nav-link {
+        color: #000 !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+        text-decoration: none;
+        color: #000;
+        }
+
+        .nav-item.dropdown .nav-link {
+        color: green !important;
+        }
+
+        .navbar-brand img {
+        height: auto;
+        max-height: 60px;
+        }
+
+        .lang-switch .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        }
+
+        aside {
+        border: 1px solid #dee2e6;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: white;
+        }
+
+        .card.blog {
+        background-color: #f8f9fa;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        }
+
+        .card.blog img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin: 15px auto 10px;
+        display: block;
+        }
+
+        .list-group-item.active {
+        color: #fff;
+        }
+
+        footer {
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin-top: 30px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        }
+    </style>
+    </head>
+    <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm custom-navbar shadow-sm border-bottom">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand ps-3" href="Lab3Index.html">
+        <img src="img/logo-energy-pilates.png" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto d-flex align-items-center gap-2">
+            <li class="nav-item"><a class="nav-link active" href="Lab3ChuyenMuc.html"><i class="fa-solid fa-list"></i> Bài viết</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-film"></i> Video</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-calendar-days"></i> Sự kiện</a></li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> Tài khoản</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+            </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav d-flex lang-switch">
+            <li class="nav-item"><a class="nav-link" href="#">Tiếng Việt</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tiếng Anh</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container mt-4">
+    <div class="row">
+        <!-- ASIDE bên trái -->
+        <div class="col-sm-4">
+        <aside>
+            <h2 class="text-info mb-3">Về tôi</h2>
+            <div class="card blog mb-4">
+            <img src="img/avatar.png" alt="Avatar" />
+            <div class="card-body">
+                <h5 class="card-title">Giới thiệu bản thân</h5>
+                <p class="card-text">
+                TS. Trần Hoàng, Tổ chức Tư vấn sức khỏe quốc tế độc lập<br />
+                <em>
+                    Châm ngôn: Ta không được chọn nơi mình sinh ra, <br />
+                    nhưng ta được chọn cách mình sẽ sống
+                </em>
+                </p>
+            </div>
+            </div>
+
+            <h3 class="text-info mt-3">Chuyên mục</h3>
+            <ul class="list-group">
+            <li class="list-group-item active bg-info d-flex justify-content-between align-items-center">
+                <a class="nav-link text-white" href="#">Chế độ tập</a>
+                <span class="badge bg-primary rounded-pill">12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a class="nav-link" href="#">Chế độ dinh dưỡng</a>
+                <span class="badge bg-primary rounded-pill">15</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a class="nav-link" href="#">Cẩm nang cuộc sống</a>
+                <span class="badge bg-primary rounded-pill">99</span>
+            </li>
+            </ul>
+        </aside>
+        </div>
+
+        <!-- SECTION bên phải -->
+        <div class="col-sm-8">
+        <section>
+            <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Bài viết nổi bật</h5>
+                    <p class="card-text">Nội dung về chế độ luyện tập khoa học, dễ áp dụng hằng ngày.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Cẩm nang dinh dưỡng</h5>
+                    <p class="card-text">Tổng hợp những mẹo ăn uống lành mạnh dành cho người bận rộn.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        </div>
+    </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    © 2025 - Thiết kế bởi Energy Pilates Team | Liên hệ: contact@energy.vn
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;           /* Bo tròn thành hình tròn */
+    display: block;               /* Hiển thị dạng block */
+    margin: 24px auto 12px auto;  /* Căn giữa theo chiều ngang, top 24px, bottom 12px */
+    background: #eaeaea;
+    object-fit: cover;            /* Ảnh không méo, luôn che kín khung */
+}
+.category-list .badge {
+    float: right;                 /* Badge nằm bên phải mục chuyên mục */
+}
+.category-list li {
+    font-size: 15px;
+    margin-bottom: 8px;           /* Cách nhau 8px giữa các mục */
+}
+.post-title {
+    font-size: 1.1rem;
+    font-weight: 600;             /* Đậm vừa phải */
+}
+.post-meta {
+    color: #888;
+    font-size: 14px;              /* Thông tin phụ nhỏ, màu xám nhạt */
+}
+.blog-list-img {
+    width: 55px;
+    height: 45px;
+    object-fit: cover;            /* Ảnh không méo, vừa khung */
+    border-radius: 5px;           /* Bo góc mềm mại */
+}
+.footer {
+    background: #222;
+    color: #eee;
+    padding: 16px 0;
+    margin-top: 24px;
+    border-radius: 0;
+}
+@media (max-width: 900px) {
+    .avatar { margin: 16px auto 10px auto; width: 90px; height: 90px;}
+}
